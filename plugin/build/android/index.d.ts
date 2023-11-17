@@ -1,0 +1,1 @@
+export { withAppManifestFile } from './appManifest';
