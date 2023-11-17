@@ -86,4 +86,7 @@ repositories {
 dependencies {
   implementation project(':expo-modules-core')
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getKotlinVersion()}"
+
+  // required dependencies
+  implementation("com.facebook.react:react-android")
 }
