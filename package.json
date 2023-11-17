@@ -1,0 +1,42 @@
+{
+  "name": "expo-share-extension",
+  "version": "0.1.0",
+  "description": "Easily add the feature to receive data from other apps without worrying about native file integration. You just need to install this and add it to app.json/app.config.js and you are good to go. Best part, you have full control over the view you want to show in the extension.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "open -a \"Xcode\" example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-share-extension",
+    "ExpoShareExtension"
+  ],
+  "repository": "https://github.com/wokaylabs/expo-share-extension.git",
+  "bugs": {
+    "url": "https://github.com/wokaylabs/expo-share-extension.git/issues"
+  },
+  "author": "Rahul Ranjan <rr842001@gmail.com> (https://github.com/rranjan14)",
+  "license": "MIT",
+  "homepage": "https://github.com/wokaylabs/expo-share-extension.git#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.0.11",
+    "expo-modules-core": "^1.5.11"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
