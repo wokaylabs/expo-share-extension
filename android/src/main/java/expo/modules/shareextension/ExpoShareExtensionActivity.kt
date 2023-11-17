@@ -3,7 +3,7 @@ package expo.modules.shareextension
 import android.os.Bundle
 import com.facebook.react.ReactActivity
 
-class ShareExtensionActivity : ReactActivity() {
+class ExpoShareExtensionActivity : ReactActivity() {
   override fun getMainComponentName(): String {
     return "ShareExtension"
   }
