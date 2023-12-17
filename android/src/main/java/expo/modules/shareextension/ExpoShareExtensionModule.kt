@@ -39,7 +39,7 @@ class ExpoShareExtensionModule:Module(){
   /** ending module definition **/
 
   private fun processIntent(): WritableArray {
-   var realPathUtil = RealPathUtil(context)
+   val realPathUtil = RealPathUtil(context)
     var map = Arguments.createMap()
     val items = Arguments.createArray()
 
