@@ -24,8 +24,6 @@ class ExpoShareExtensionModule:Module(){
   private val currentActivity
     get() = appContext.activityProvider?.currentActivity ?: throw Exceptions.MissingActivity()
 
-  private val realPathUtil = RealPathUtil(context)
-
   /** starting module definition **/
   override fun definition() = ModuleDefinition {
     Name("ExpoShareExtension")
@@ -41,6 +39,7 @@ class ExpoShareExtensionModule:Module(){
   /** ending module definition **/
 
   private fun processIntent(): WritableArray {
+   var realPathUtil = RealPathUtil(context)
     var map = Arguments.createMap()
     val items = Arguments.createArray()
 
