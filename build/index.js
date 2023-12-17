@@ -1,7 +1,5 @@
-// Import the native module. On web, it will be resolved to ExpoShareExtension.web.ts
-// and on native platforms to ExpoShareExtension.ts
-import ExpoShareExtensionModule from "./ExpoShareExtensionModule";
-export function hello() {
-    return ExpoShareExtensionModule.hello();
-}
+import ExpoShareExtensionModule from "./ExpoShareExtension";
+export const close = ExpoShareExtensionModule.close;
+export const getIntentData = ExpoShareExtensionModule.getIntentData;
+export const ACTIVITY_NAME = ExpoShareExtensionModule.ACTIVITY_NAME;
 //# sourceMappingURL=index.js.map

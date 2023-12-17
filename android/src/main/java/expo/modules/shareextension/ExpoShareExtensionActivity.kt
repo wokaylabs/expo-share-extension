@@ -1,14 +1,10 @@
 package expo.modules.shareextension
 
-import android.os.Bundle
 import com.facebook.react.ReactActivity
+import expo.modules.shareextension.util.Constants
 
 class ExpoShareExtensionActivity : ReactActivity() {
   override fun getMainComponentName(): String {
-    return "ShareExtension"
-  }
-
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+    return Constants.ACTIVITY_NAME
   }
 }
