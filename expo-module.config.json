@@ -1,5 +1,8 @@
 {
-  "platforms": ["ios", "android"],
+  "platforms": ["android"],
+  "ios": {
+    "modules": ["ExpoShareExtensionModule"]
+  },
   "android": {
     "modules": ["expo.modules.shareextension.ExpoShareExtensionModule"]
   }
