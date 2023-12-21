@@ -14,15 +14,16 @@ public class ExpoShareExtensionModule: Module {
       // The function's name in JavaScript. If not specified, it will be inferred from the function name.
       // The function will be accessible from `NativeModules.ExpoShareExtension.close()` in JavaScript.
       Name("close")
-
-      // The function's return type. If not specified, it will be inferred from the function's implementation.
-      // The return type will be `void` in JavaScript.
-      Returns(Void.self)
+      return noop()
     }
 
     Function("getIntentData"){
       Name("getIntentData")
-      Returns(Void.self)
+      return noop()
     }
   }
 }
+func noop() {
+    // This function does nothing
+}
+
